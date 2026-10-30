@@ -2,11 +2,11 @@
 import defaultOgImage from './assets/og-default.png';
 
 export const site = {
-  name: 'Pilcrow',
-  description: 'A minimal, typography-first Astro theme.',
-  url: 'https://example.com',
+  name: 'Sionrbot-blog',
+  description: "sionrbot's the first Astro theme blog.",
+  url: 'https://blog.sionrbot.xyz',
   locale: 'en', // 'en' | 'ko' | 'hu' — UI strings come from src/i18n/<locale>.ts
-  author: 'Ada Marlow', // Fictional demo author. Replace with your name
+  author: 'sionrbot', // Site author, also used in SEO structured data
   defaultOgImage, // 1200×630. A post's heroImage takes precedence
 } as const;
 
@@ -32,7 +32,7 @@ export const nav = {
 } as const;
 
 export const seo = {
-  titleTemplate: '%s · Pilcrow',
+  titleTemplate: `%s · ${site.name}`,
   twitterHandle: '',
   jsonLd: { type: 'Person' as 'Person' | 'Organization', name: site.author },
 };
